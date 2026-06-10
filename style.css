@@ -1,0 +1,124 @@
+:root {
+    --primary-pink: #e8a0bf;
+    --light-blush: #FDF2F8;
+    --mauve-accent: #9d4e7c;
+    --text-main: #2D272A;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-main);
+    background-color: var(--light-blush);
+}
+
+.font-serif-title {
+    font-family: 'Playfair Display', serif;
+}
+
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-white-filter {
+    filter: brightness(0) invert(1);
+}
+
+/* --- GLITCH-FREE INFINITE LOOP MARQUEE --- */
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+
+.marquee-track {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem; 
+    width: max-content;
+    will-change: transform;
+} 
+
+.marquee-track:hover {
+    cursor: pointer;
+}
+
+/* --- SCROLL REVEAL ANIMATIONS --- */
+.reveal-element, .integrated-memory-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
+
+/* Base Active State Trigger */
+.reveal-element.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- PRODUCTION CARD HOVER ELEVATION --- */
+#productions .reveal-element {
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+#productions .reveal-element:hover {
+    border-color: rgba(157, 78, 124, 0.15);
+}
+
+/* Replicating Asymmetric Layout Safely alongside reveal anchors */
+@media (min-width: 768px) {
+    #productions .grid > div[data-tilt].reveal-element.active {
+        transform: translateY(-24px) !important;
+    }
+}
+
+/* Webflow-style smooth spring transitions mapped cleanly to custom classes */
+.btn-premium, button, a[href="#contact"] {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-premium:hover, a[href="#contact"]:hover {
+    transform: translateY(-3px) scale(1.03) !important;
+    box-shadow: 0 12px 20px -5px rgba(157, 78, 124, 0.35) !important;
+}
+
+/* --- INTEGRATED SCATTERED TIMELINE MEMORIES --- */
+.integrated-memory-card {
+    will-change: transform, box-shadow;
+    backface-visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+    .integrated-memory-card:nth-child(1).active {
+        opacity: 1;
+        transform: rotate(-8deg);
+    }
+    .integrated-memory-card:nth-child(2).active {
+        opacity: 1;
+        transform: rotate(6deg) translateX(3rem);
+    }
+    .integrated-memory-card:nth-child(3).active {
+        opacity: 1;
+        transform: rotate(-4deg);
+    }
+    
+    .integrated-memory-card:hover {
+        transform: scale(1.07) translateY(-5px) rotate(0deg) !important;
+        box-shadow: 0 25px 50px -12px rgba(157, 78, 124, 0.22);
+        z-index: 40;
+    }
+}
+
+@media (max-width: 1023px) {
+    .integrated-memory-card.active {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+}

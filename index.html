@@ -1,0 +1,766 @@
+    <!DOCTYPE html>
+    <html lang="en" class="scroll-smooth">
+    <head>
+        <!-- ==========================================
+             SEO META TAGS
+             ========================================== -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roseknot Events & Marketing | Ignite Visions. Elevate Experiences.</title>
+        <meta name="description" content="A premier event management and strategic marketing agency in New Delhi blending high-impact corporate production with breathtaking luxury celebrations. From concept fabrication to flawless logistical execution.">
+        <meta name="keywords" content="Event Management New Delhi, Strategic Marketing Agency, Corporate Event Production, Luxury Weddings Delhi, Concept Fabrication, Destination Events India">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Roseknot Events & Marketing">
+        <meta property="og:description" content="Ignite Visions. Elevate Experiences. Premier corporate production and luxury celebration management in New Delhi.">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="overflow-x-hidden">
+
+        <!-- ==========================================
+             1. FIXED NAVIGATION BAR (Bigger Logo Integrated)
+             ========================================== -->
+        <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-5">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+                
+                <!-- Brand Logo Image (Slightly Bigger Size Layout) -->
+                <a href="#home" class="flex items-center block transition-all duration-300">
+                    <img id="nav-logo-img" 
+                         src="https://roseknotevents.com/wp-content/uploads/2022/12/Black-Roseknot-Events-Marketing.png.webp" 
+                         alt="Roseknot Events & Marketing Official Logo" 
+                         class="h-12 md:h-16 w-auto object-contain transition-all duration-300 logo-white-filter">
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide text-white" id="nav-links">
+                    <a href="#home" class="hover:text-[#e8a0bf] transition-colors duration-200">Home</a>
+                    <a href="#about" class="hover:text-[#e8a0bf] transition-colors duration-200">About Agency</a>
+                    <a href="#storyline" class="hover:text-[#e8a0bf] transition-colors duration-200">Our Methodology</a>
+                    <a href="#metrics" class="hover:text-[#e8a0bf] transition-colors duration-200">Impact Metrics</a>
+                    <a href="#testimonials" class="hover:text-[#e8a0bf] transition-colors duration-200">Showcase</a>
+                    <a href="#contact" class="bg-[#9d4e7c] text-white px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-[#823d65] transition-all transform hover:scale-105 shadow-md">Get In Touch</a>
+                </div>
+
+                <!-- Mobile Hamburger Trigger -->
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none p-2 rounded" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars text-2xl transition-transform duration-300" id="hamburger-icon"></i>
+                </button>
+            </div>
+
+            <!-- Interactive Mobile Dropdown Drawer -->
+            <div id="mobile-drawer" class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-xl border-t border-pink-100 hidden flex-col px-8 py-6 space-y-4 font-medium text-gray-800 transition-all duration-300">
+                <a href="#home" class="mobile-link py-2 border-b border-gray-100 hover:text-[#9d4e7c]">Home</a>
+                <a href="#about" class="mobile-link py-2 border-b border-gray-100 hover:text-[#9d4e7c]">About Agency</a>
+                <a href="#storyline" class="mobile-link py-2 border-b border-gray-100 hover:text-[#9d4e7c]">Our Methodology</a>
+                <a href="#metrics" class="mobile-link py-2 border-b border-gray-100 hover:text-[#9d4e7c]">Impact Metrics</a>
+                <a href="#testimonials" class="mobile-link py-2 border-b border-gray-100 hover:text-[#9d4e7c]">Showcase</a>
+                <a href="#contact" class="mobile-link inline-block bg-[#9d4e7c] text-white text-center py-3 rounded-xl font-semibold text-xs tracking-wider uppercase">Get In Touch</a>
+            </div>
+        </nav>
+
+
+        <!-- ==========================================
+             2. HERO ROTATING CAROUSEL SECTION
+             ========================================== -->
+        <header id="home" class="relative w-screen h-screen bg-neutral-900 overflow-hidden">
+            <div id="hero-slider-container" class="relative w-full h-full">
+                
+                <div class="hero-slide absolute inset-0 w-full h-full opacity-100 transition-opacity duration-1000 ease-in-out z-10">
+                    <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/80 via-neutral-900/40 to-neutral-950/70 z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover" alt="High impact corporate conference setup by Roseknot">
+                    <div class="absolute inset-0 z-20 flex flex-col justify-center items-start max-w-7xl mx-auto px-6 md:px-12 text-white">
+                        <span class="text-[#e8a0bf] uppercase tracking-widest font-semibold text-xs md:text-sm mb-4 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full">Corporate Events / Conclaves</span>
+                        <h1 class="font-serif-title text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 max-w-4xl leading-[1.1]">
+                            Ignite Visions.<br><span class="italic text-[#e8a0bf]">Elevate</span> Experiences.
+                        </h1>
+                        <p class="text-gray-200 text-base md:text-lg max-w-xl mb-8 font-light leading-relaxed">
+                            We blend high-impact structural corporate production spaces with pristine spatial execution across New Delhi.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#contact" class="bg-[#9d4e7c] text-white font-semibold text-xs uppercase tracking-wider px-8 py-4 rounded-full shadow-lg hover:bg-[#823d65] transition-all">Consult Our Architects</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out z-0">
+                    <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/80 via-neutral-900/40 to-neutral-950/70 z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover" alt="Breathtaking luxury reception production by Roseknot">
+                    <div class="absolute inset-0 z-20 flex flex-col justify-center items-start max-w-7xl mx-auto px-6 md:px-12 text-white">
+                        <span class="text-[#e8a0bf] uppercase tracking-widest font-semibold text-xs md:text-sm mb-4 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full">Weddings & Luxury Overlays</span>
+                        <h1 class="font-serif-title text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 max-w-4xl leading-[1.1]">
+                            Flawless Logistical<br><span class="italic text-[#e8a0bf]">Execution</span>.
+                        </h1>
+                        <p class="text-gray-200 text-base md:text-lg max-w-xl mb-8 font-light leading-relaxed">
+                            Impeccable structural layouts designed ground-up for luxury milestone transformations and premium social spaces.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#contact" class="bg-[#9d4e7c] text-white font-semibold text-xs uppercase tracking-wider px-8 py-4 rounded-full shadow-lg hover:bg-[#823d65] transition-all">Plan Luxury Gala</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out z-0">
+                    <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/80 via-neutral-900/40 to-neutral-950/70 z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover" alt="Luxury milestone celebration production by Roseknot">
+                    <div class="absolute inset-0 z-20 flex flex-col justify-center items-start max-w-7xl mx-auto px-6 md:px-12 text-white">
+                        <span class="text-[#e8a0bf] uppercase tracking-widest font-semibold text-xs md:text-sm mb-4 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full">Birthday Planning & Milestones</span>
+                        <h1 class="font-serif-title text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 max-w-4xl leading-[1.1]">
+                            Bespoke Milestone<br><span class="italic text-[#e8a0bf]">Celebrations</span>.
+                        </h1>
+                        <p class="text-gray-200 text-base md:text-lg max-w-xl mb-8 font-light leading-relaxed">
+                            Crafting highly vibrant, detailed environment architectures for intimate galas and custom luxury milestones.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#contact" class="bg-[#9d4e7c] text-white font-semibold text-xs uppercase tracking-wider px-8 py-4 rounded-full shadow-lg hover:bg-[#823d65] transition-all">Design Your Milestone</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out z-0">
+                    <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/80 via-neutral-900/40 to-neutral-950/70 z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover" alt="Premium hospitality management setup by Roseknot">
+                    <div class="absolute inset-0 z-20 flex flex-col justify-center items-start max-w-7xl mx-auto px-6 md:px-12 text-white">
+                        <span class="text-[#e8a0bf] uppercase tracking-widest font-semibold text-xs md:text-sm mb-4 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full">Hospitality Management</span>
+                        <h1 class="font-serif-title text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 max-w-4xl leading-[1.1]">
+                            Premium Turnkey<br><span class="italic text-[#e8a0bf]">Hospitality</span>.
+                        </h1>
+                        <p class="text-gray-200 text-base md:text-lg max-w-xl mb-8 font-light leading-relaxed">
+                            Flawless operational design, luxury hotel routing matrices, and high-tier hospitality guest flow orchestration.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#contact" class="bg-[#9d4e7c] text-white font-semibold text-xs uppercase tracking-wider px-8 py-4 rounded-full shadow-lg hover:bg-[#823d65] transition-all">Connect Logistics Hub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="hero-prev" class="absolute left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center rounded-full border border-white/20 bg-black/10 text-white hover:bg-[#9d4e7c] hover:border-[#9d4e7c] transition-all" aria-label="Previous Slide">
+                <i class="fa-solid fa-chevron-left text-sm"></i>
+            </button>
+            <button id="hero-next" class="absolute right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center rounded-full border border-white/20 bg-black/10 text-white hover:bg-[#9d4e7c] hover:border-[#9d4e7c] transition-all" aria-label="Next Slide">
+                <i class="fa-solid fa-chevron-right text-sm"></i>
+            </button>
+
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex space-x-3">
+                <span class="hero-dot w-3 h-1.5 rounded-full bg-white transition-all duration-300 cursor-pointer" data-slide="0"></span>
+                <span class="hero-dot w-1.5 h-1.5 rounded-full bg-white/40 transition-all duration-300 cursor-pointer" data-slide="1"></span>
+                <span class="hero-dot w-1.5 h-1.5 rounded-full bg-white/40 transition-all duration-300 cursor-pointer" data-slide="2"></span>
+                <span class="hero-dot w-1.5 h-1.5 rounded-full bg-white/40 transition-all duration-300 cursor-pointer" data-slide="3"></span>
+            </div>
+        </header>
+
+
+        <!-- ==========================================
+             3. ABOUT AGENCY BLOCK
+             ========================================== -->
+        <section id="about" class="py-24 md:py-32 max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 reveal-element">
+                    <div class="flex items-center space-x-3 text-[#9d4e7c] font-semibold text-xs uppercase tracking-widest">
+                        <span class="w-8 h-[2px] bg-[#e8a0bf]"></span>
+                        <span>Corporate & Luxury Synthesis</span>
+                    </div>
+                    <h2 class="font-serif-title text-3xl md:text-5xl font-bold tracking-tight text-neutral-900 leading-tight">
+                        Welcome to a world where structural perfection meets pure <span class="italic text-[#9d4e7c] font-normal">artistry</span>.
+                    </h2>
+                    <p class="text-neutral-600 text-base md:text-lg font-light leading-relaxed">
+                        Based proudly in New Delhi, <strong class="font-semibold text-neutral-900">Roseknot Events & Marketing</strong> is a premier structural event architecture firm. We merge high-stakes commercial production systems with bespoke luxury milestone events.
+                    </p>
+                    <p class="text-neutral-600 text-sm md:text-base leading-relaxed">
+                        Our team carries your concept single-handedly from basic ground-up fabrication matrices to flawless spatial implementation. We remove entirely the logistical coordination load from your corporate pipelines, leaving only pristine, breathtaking event landscapes.
+                    </p>
+                    
+                    <div class="pt-4 grid grid-cols-2 gap-6">
+                        <div class="p-5 bg-white rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-shadow">
+                            <i class="fa-solid fa-building-shield text-2xl text-[#9d4e7c] mb-3"></i>
+                            <h4 class="font-bold text-neutral-900 text-sm mb-1">Corporate Rigging</h4>
+                            <p class="text-xs text-neutral-500">Heavy hardware, stage arrays, lighting and projection frameworks.</p>
+                        </div>
+                        <div class="p-5 bg-white rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-shadow">
+                            <i class="fa-solid fa-wand-magic-sparkles text-2xl text-[#e8a0bf] mb-3"></i>
+                            <h4 class="font-bold text-neutral-900 text-sm mb-1">Luxury Design</h4>
+                            <p class="text-xs text-neutral-500">Premium color schemes, pristine floral systems, immersive social galas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative reveal-element" style="transition-delay: 200ms;">
+                    <div class="absolute inset-0 bg-[#e8a0bf]/10 rounded-3xl transform rotate-3 scale-102"></div>
+                    <div class="relative bg-white p-4 rounded-3xl shadow-xl border border-pink-50">
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=800" class="w-full h-auto object-cover rounded-2xl" alt="Creative event production brief review inside Roseknot Delhi office">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-lg border border-pink-100 flex items-center space-x-3 max-w-xs">
+                            <div class="w-10 h-10 rounded-full bg-[#FDF2F8] flex items-center justify-center text-[#9d4e7c]">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-neutral-900">Delhi NCR Elite Tier</p>
+                                <p class="text-[11px] text-neutral-500">Recognized for premier spatial staging & execution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             4. EXPERIENTIAL STORYLINE TIMELINE LAYER
+             ========================================== -->
+        <section id="storyline" class="py-24 bg-white border-y border-pink-100/50 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                
+                <!-- Section Header -->
+                <div class="text-center max-w-2xl mx-auto mb-20 reveal-element">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#9d4e7c] bg-[#FDF2F8] px-4 py-1.5 rounded-full inline-block mb-3">Operational Pipeline</span>
+                    <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-neutral-900">Concept to Execution</h2>
+                    <p class="text-neutral-500 font-light text-sm md:text-base mt-4">Trace the meticulous layout path your project undergoes inside our design engine room.</p>
+                </div>
+
+                <!-- Main Layout Split Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Side: The Pipeline Timeline (Takes 7 columns on large screens) -->
+                    <div class="lg:col-span-7 relative border-l border-pink-200 pl-6 md:pl-12 space-y-16 py-4 max-w-3xl">
+                        
+                        <!-- Phase 01 -->
+                        <div class="relative reveal-element">
+                            <div class="absolute -left-[31px] md:-left-[55px] w-4 h-4 rounded-full bg-[#9d4e7c] border-4 border-white shadow-md top-1"></div>
+                            <span class="text-xs font-bold text-[#9d4e7c] tracking-widest uppercase block mb-1">Phase 01 / Intake Planning</span>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Structural Blueprinting & Conception</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed">
+                                We map technical floor plans, architectural layout constraints, and visual presentation rendering proposals matching raw brand criteria or custom wedding design targets.
+                            </p>
+                        </div>
+
+                        <!-- Phase 02 -->
+                        <div class="relative reveal-element" style="transition-delay: 100ms;">
+                            <div class="absolute -left-[31px] md:-left-[55px] w-4 h-4 rounded-full bg-[#e8a0bf] border-4 border-white shadow-md top-1"></div>
+                            <span class="text-xs font-bold text-[#e8a0bf] tracking-widest uppercase block mb-1">Phase 02 / Hard Material Fabrication</span>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Concept Fabrication & Materialization</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed">
+                                Our internal offsite construction warehouses build complex customized staging assets, backdrops, custom booths, and display elements securely prior to final site loading.
+                            </p>
+                        </div>
+
+                        <!-- Phase 03 -->
+                        <div class="relative reveal-element" style="transition-delay: 200ms;">
+                            <div class="absolute -left-[31px] md:-left-[55px] w-4 h-4 rounded-full bg-[#9d4e7c] border-4 border-white shadow-md top-1"></div>
+                            <span class="text-xs font-bold text-[#9d4e7c] tracking-widest uppercase block mb-1">Phase 03 / Engineering Realization</span>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Logistical Dispatch & Rigging Architecture</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed">
+                                Onsite structural assembly, complex cable pathing, lighting grid focus loops, and advanced crystal-clear digital sound field calibration managed under strict timeline safety parameters.
+                            </p>
+                        </div>
+
+                        <!-- Phase 04 -->
+                        <div class="relative reveal-element" style="transition-delay: 300ms;">
+                            <div class="absolute -left-[31px] md:-left-[55px] w-4 h-4 rounded-full bg-[#e8a0bf] border-4 border-white shadow-md top-1"></div>
+                            <span class="text-xs font-bold text-[#e8a0bf] tracking-widest uppercase block mb-1">Phase 04 / Live Showcase Automation</span>
+                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Flawless Show Orchestration</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed">
+                                Our show directors control back-of-house operational timelines directly from the tech cockpit, running live cues, video cues, and schedule switches with absolute zero disruption.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Side: The Scattered Memory Stack (Takes 5 columns on large screens) -->
+                    <div class="lg:col-span-5 relative flex flex-col sm:flex-row lg:flex-col items-center justify-center gap-6 pt-12 lg:pt-0 min-h-[450px] sm:min-h-[300px] lg:min-h-[600px] w-full">
+                        
+                        <!-- Memory Image 1: Top/Left Scattered Card -->
+                        <div class="integrated-memory-card relative w-[260px] sm:w-[220px] lg:w-[290px] bg-white p-3 pb-10 rounded-xl shadow-lg border border-pink-100/60 transform -rotate-6 sm:-rotate-3 lg:-rotate-8 hover:rotate-0 hover:scale-105 hover:z-30 transition-all duration-500 ease-out group cursor-pointer shrink-0 lg:absolute lg:top-4 lg:left-4">
+                            <div class="w-full h-[160px] lg:h-[180px] overflow-hidden rounded-md bg-neutral-100">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Blueprint Design Verification Room">
+                            </div>
+                            <div class="absolute bottom-2 left-3 right-3">
+                                <p class="font-serif-title text-neutral-800 text-xs font-bold">Staging Blueprints</p>
+                                <p class="text-neutral-400 text-[9px] tracking-wider uppercase mt-0.5">01 // Architecture</p>
+                            </div>
+                        </div>
+
+                        <!-- Memory Image 2: Middle/Right Scattered Card (Layered Above) -->
+                        <div class="integrated-memory-card relative w-[260px] sm:w-[220px] lg:w-[310px] bg-white p-3 pb-10 rounded-xl shadow-2xl border border-pink-100 transform rotate-3 sm:rotate-1 lg:rotate-6 lg:translate-x-12 hover:rotate-0 hover:scale-105 hover:z-30 transition-all duration-500 ease-out group cursor-pointer shrink-0 z-10 lg:absolute lg:top-1/3 lg:right-2">
+                            <div class="w-full h-[170px] lg:h-[200px] overflow-hidden rounded-md bg-neutral-100">
+                                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Premium Event Site Overlay Structural Phase">
+                            </div>
+                            <div class="absolute bottom-2 left-3 right-3">
+                                <p class="font-serif-title text-neutral-800 text-xs font-bold">Fabrication Floors</p>
+                                <p class="text-neutral-400 text-[9px] tracking-wider uppercase mt-0.5">02 // Structural Load</p>
+                            </div>
+                        </div>
+
+                        <!-- Memory Image 3: Bottom/Left Scattered Card -->
+                        <div class="integrated-memory-card relative w-[260px] sm:w-[220px] lg:w-[280px] bg-white p-3 pb-10 rounded-xl shadow-lg border border-pink-100/60 transform -rotate-3 sm:rotate-2 lg:-rotate-4 hover:rotate-0 hover:scale-105 hover:z-30 transition-all duration-500 ease-out group cursor-pointer shrink-0 lg:absolute lg:bottom-4 lg:left-6">
+                            <div class="w-full h-[160px] lg:h-[170px] overflow-hidden rounded-md bg-neutral-100">
+                                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Live Event Execution Engineering Room">
+                            </div>
+                            <div class="absolute bottom-2 left-3 right-3">
+                                <p class="font-serif-title text-neutral-800 text-xs font-bold">Live Execution Controls</p>
+                                <p class="text-neutral-400 text-[9px] tracking-wider uppercase mt-0.5">03 // Show Orchestration</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="productions" class="py-24 bg-[#FDF2F8]/40">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal-element">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-[#9d4e7c] bg-[#FDF2F8] px-4 py-1.5 rounded-full inline-block mb-3">Active Engagements</span>
+                        <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-neutral-900">Featured Environments</h2>
+                    </div>
+                    <p class="text-neutral-500 font-light text-sm md:text-base max-w-md mt-4 md:mt-0">
+                        Explore our active custom spatial layouts, luxury installations, and live corporate pipelines across the region.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="reveal-element bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-pink-100/40 transition-all duration-300 group flex flex-col justify-between h-full">
+                        <div class="relative overflow-hidden h-64 bg-neutral-100">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="TechSummit Corporate Setup">
+                            <span class="absolute top-4 left-4 bg-[#9d4e7c] text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Corporate</span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center space-x-2 text-xs text-[#9d4e7c] font-semibold mb-2">
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                    <span>Annual Operations Tracker</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-[#9d4e7c] transition-colors mb-3">TechSummit Corporate Conclave</h3>
+                                <p class="text-neutral-500 text-sm font-light leading-relaxed mb-6">
+                                    Integration of multi-tier media frameworks, complex architectural column concealment, and high-load stage array balancing.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-pink-50 text-xs text-neutral-400">
+                                <span class="flex items-center"><i class="fa-solid fa-location-dot mr-1.5 text-pink-300"></i> Aerocity, New Delhi</span>
+                                <span class="font-medium text-[#9d4e7c] group-hover:translate-x-1 transition-transform">View Blueprint &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal-element bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-pink-100/40 transition-all duration-300 group flex flex-col justify-between h-full" style="transition-delay: 100ms;">
+                        <div class="relative overflow-hidden h-64 bg-neutral-100">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Luxury Farmhouse Overlays">
+                            <span class="absolute top-4 left-4 bg-[#e8a0bf] text-neutral-950 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Luxury Overlay</span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center space-x-2 text-xs text-[#e8a0bf] font-bold mb-2">
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                    <span>Bespoke Structural Build</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-[#9d4e7c] transition-colors mb-3">The Somany Farmhouse Pavilion</h3>
+                                <p class="text-neutral-500 text-sm font-light leading-relaxed mb-6">
+                                    Fabrication of custom blush-tone overlay domes, comprehensive perimeter lighting rigs, and floral canopy structural netting.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-pink-50 text-xs text-neutral-400">
+                                <span class="flex items-center"><i class="fa-solid fa-location-dot mr-1.5 text-pink-300"></i> Chattarpur, Delhi</span>
+                                <span class="font-medium text-[#9d4e7c] group-hover:translate-x-1 transition-transform">View Blueprint &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal-element bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-pink-100/40 transition-all duration-300 group flex flex-col justify-between h-full" style="transition-delay: 200ms;">
+                        <div class="relative overflow-hidden h-64 bg-neutral-100">
+                            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Luxury Hospitality Setup">
+                            <span class="absolute top-4 left-4 bg-neutral-900 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Hospitality</span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center space-x-2 text-xs text-neutral-500 font-semibold mb-2">
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                    <span>Logistics Matrix</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-neutral-900 group-hover:text-[#9d4e7c] transition-colors mb-3">Elite Brand Activation Hub</h3>
+                                <p class="text-neutral-500 text-sm font-light leading-relaxed mb-6">
+                                    Turnkey management tracking guest flow orchestration, high-tier hotel distribution matrices, and physical activation placements.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-pink-50 text-xs text-neutral-400">
+                                <span class="flex items-center"><i class="fa-solid fa-location-dot mr-1.5 text-pink-300"></i> CyberHub, Gurugram</span>
+                                <span class="font-medium text-[#9d4e7c] group-hover:translate-x-1 transition-transform">View Blueprint &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             5. STATISTICS METRICS DISPLAY
+             ========================================== -->
+        <section id="metrics" class="py-20 bg-neutral-900 text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(#9d4e7c_1px,transparent_1px)] [background-size:16px_16px] opacity-10"></div>
+            <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+                    
+                    <div class="space-y-2 reveal-element">
+                        <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-[#e8a0bf]">
+                            <i class="fa-solid fa-handshake-angle text-xl"></i>
+                        </div>
+                        <div class="text-4xl md:text-5xl font-extrabold font-serif-title tracking-tight text-[#e8a0bf]">
+                            <span class="counter-val" data-target="320">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-gray-400 font-medium uppercase tracking-wider">Corporate Summits</p>
+                    </div>
+
+                    <div class="space-y-2 reveal-element" style="transition-delay: 100ms;">
+                        <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-[#9d4e7c]">
+                            <i class="fa-solid fa-champagne-glasses text-xl"></i>
+                        </div>
+                        <div class="text-4xl md:text-5xl font-extrabold font-serif-title tracking-tight text-white">
+                            <span class="counter-val" data-target="180">0</span>+
+                        </div>
+                        <p class="text-xs md:text-sm text-gray-400 font-medium uppercase tracking-wider">Luxury Galas</p>
+                    </div>
+
+                    <div class="space-y-2 reveal-element" style="transition-delay: 200ms;">
+                        <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-[#e8a0bf]">
+                            <i class="fa-solid fa-shapes text-xl"></i>
+                        </div>
+                        <div class="text-4xl md:text-5xl font-extrabold font-serif-title tracking-tight text-[#e8a0bf]">
+                            <span class="counter-val" data-target="45">0</span>K
+                        </div>
+                        <p class="text-xs md:text-sm text-gray-400 font-medium uppercase tracking-wider">Sq. Ft Fabricated</p>
+                    </div>
+
+                    <div class="space-y-2 reveal-element" style="transition-delay: 300ms;">
+                        <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-[#9d4e7c]">
+                            <i class="fa-solid fa-heart text-xl"></i>
+                        </div>
+                        <div class="text-4xl md:text-5xl font-extrabold font-serif-title tracking-tight text-white">
+                            <span class="counter-val" data-target="99">0</span>%
+                        </div>
+                        <p class="text-xs md:text-sm text-gray-400 font-medium uppercase tracking-wider">Retention Rate</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             6. TESTIMONIALS (Seamless Infinite Loop Slider)
+             ========================================== -->
+        <section id="testimonials" class="py-24 bg-[#FDF2F8]/40 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#9d4e7c] block mb-2">Our Portfolio Proof</span>
+                <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-neutral-900">What Partners Say</h2>
+            </div>
+
+            <!-- Infinite Loop Outer Wrapper -->
+            <div class="marquee-container w-full relative">
+                <div id="js-marquee-track" class="marquee-track px-4">
+                    
+                    <div class="w-[300px] md:w-[450px] bg-white p-8 rounded-3xl border border-pink-100 shadow-sm flex flex-col justify-between space-y-6 shrink-0">
+                        <div class="text-yellow-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-neutral-600 text-sm md:text-base italic font-light leading-relaxed">
+                            "Roseknot completely redesigned our annual corporate conclave in Aerocity. The stage design array was stunning, and the technical team integrated our media framework with zero errors. Absolute professionals."
+                        </p>
+                        <div class="flex items-center space-x-4 border-t border-pink-50 pt-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120" class="w-12 h-12 rounded-full object-cover border border-pink-200" alt="Corporate Partner Portrait">
+                            <div>
+                                <h4 class="font-bold text-neutral-900 text-sm">Rajesh Malhotra</h4>
+                                <p class="text-xs text-neutral-400">Operations VP, TechSummit India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-[300px] md:w-[450px] bg-white p-8 rounded-3xl border border-pink-100 shadow-sm flex flex-col justify-between space-y-6 shrink-0">
+                        <div class="text-yellow-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-neutral-600 text-sm md:text-base italic font-light leading-relaxed">
+                            "For our daughter's luxury farmhouse wedding, Roseknot fabricated a breathtaking custom blush-tone overlay dome. The architectural vision matched what they presented in the design meeting flawlessly."
+                        </p>
+                        <div class="flex items-center space-x-4 border-t border-pink-50 pt-4">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120" class="w-12 h-12 rounded-full object-cover border border-pink-200" alt="Social Client Portrait">
+                            <div>
+                                <h4 class="font-bold text-neutral-900 text-sm">Aanya Somany</h4>
+                                <p class="text-xs text-neutral-400">Private Celebration Client, New Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-[300px] md:w-[450px] bg-white p-8 rounded-3xl border border-pink-100 shadow-sm flex flex-col justify-between space-y-6 shrink-0">
+                        <div class="text-yellow-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-neutral-600 text-sm md:text-base italic font-light leading-relaxed">
+                            "Their marketing activations tracking system is brilliant. Roseknot executed a multi-tier product launch event that generated exceptional public interactions and physical media placement."
+                        </p>
+                        <div class="flex items-center space-x-4 border-t border-pink-50 pt-4">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=120" class="w-12 h-12 rounded-full object-cover border border-pink-200" alt="Brand Manager Portrait">
+                            <div>
+                                <h4 class="font-bold text-neutral-900 text-sm">Vikram Aditya</h4>
+                                <p class="text-xs text-neutral-400">Head of Luxury Brand Management</p>
+                            </div>
+                        </div>
+                    </div>                
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+         7. HIGH CONTEXT PARALLAX SCROLL COMPONENT
+         ========================================== -->
+        <section class="parallax-bg relative h-[450px] flex items-center justify-center text-center px-6" style="background-image: url('https://images.unsplash.com/photo-1505232458627-a727b7f410f0?auto=format&fit=crop&q=80&w=1600');">
+            <!-- Parallax Dark Mask Layer -->
+            <div class="absolute inset-0 bg-neutral-950/75 z-10"></div>
+            
+            <!-- Center Messaging -->
+            <div class="relative z-20 max-w-3xl space-y-6 reveal-element">
+                <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-white leading-tight">Ready to map your next high-tier production environment?</h2>
+                <p class="text-gray-300 font-light text-base md:text-lg max-w-xl mx-auto">
+                    Let our technical fabrication specialists design the ideal spatial layout matching your explicit baseline guidelines.
+                </p>
+                <div class="pt-4">
+                    <a href="#contact" class="inline-block bg-[#e8a0bf] text-neutral-900 font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full shadow-lg hover:bg-white transition-all transform hover:scale-105">Initiate Project Intake</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             8. SIMPLIFIED CONSULTATION FORM & MAP
+             ========================================== -->
+        <section id="contact" class="py-24 max-w-7xl mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <div class="lg:col-span-7 bg-white px-8 md:px-12 py-14 rounded-3xl border border-pink-100/60 shadow-xl reveal-element">
+            <span class="text-xs font-bold text-[#9d4e7c] tracking-widest uppercase block mb-2">Get in Touch</span>
+            <h3 class="font-serif-title text-2xl md:text-4xl font-bold text-neutral-900 mb-8">Let's Talk About Your Event</h3>
+            
+            <form id="intake-form" class="space-y-8" novalidate>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex flex-col">
+                        <label for="client-name" class="text-xs font-bold text-neutral-700 uppercase mb-2">Your Name *</label>
+                        <input type="text" id="client-name" class="w-full px-4 py-4 rounded-xl border border-neutral-200 bg-neutral-50/50 text-sm focus:outline-none focus:border-[#9d4e7c] focus:bg-white transition-all" placeholder="Enter your full name" required>
+                        <span class="text-[11px] text-red-500 mt-1 hidden" id="err-name">Please enter your name.</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="client-email" class="text-xs font-bold text-neutral-700 uppercase mb-2">Email Address *</label>
+                        <input type="email" id="client-email" class="w-full px-4 py-4 rounded-xl border border-neutral-200 bg-neutral-50/50 text-sm focus:outline-none focus:border-[#9d4e7c] focus:bg-white transition-all" placeholder="name@company.com" required>
+                        <span class="text-[11px] text-red-500 mt-1 hidden" id="err-email">Please enter a valid email address.</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex flex-col">
+                        <label for="event-type" class="text-xs font-bold text-neutral-700 uppercase mb-2">Nature of Event *</label>
+                        <select id="event-type" class="w-full px-4 py-4 rounded-xl border border-neutral-200 bg-neutral-50/50 text-sm focus:outline-none focus:border-[#9d4e7c] focus:bg-white transition-all text-neutral-700 appearance-none cursor-pointer" style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%239d4e7c%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem center; background-size: 0.65rem auto; padding-right: 2.5rem;">
+                            <option value="" disabled selected>-- Select Nature of Event --</option>
+                            <option value="corporate">Corporate Events / Conclaves</option>
+                            <option value="weddings">Weddings & Luxury Overlays</option>
+                            <option value="birthday">Birthday Planning & Milestones</option>
+                            <option value="hospitality">Hospitality Management</option>
+                            <option value="hotels-travel">Hotels & Travel Logistics</option>
+                            <option value="others">Others / Bespoke Activations</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="client-phone" class="text-xs font-bold text-neutral-700 uppercase mb-2">Phone Number *</label>
+                        <input type="tel" id="client-phone" class="w-full px-4 py-4 rounded-xl border border-neutral-200 bg-neutral-50/50 text-sm focus:outline-none focus:border-[#9d4e7c] focus:bg-white transition-all" placeholder="Enter your phone number" required>
+                        <span class="text-[11px] text-red-500 mt-1 hidden" id="err-phone">Please enter a valid phone number.</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="client-message" class="text-xs font-bold text-neutral-700 uppercase mb-2">Tell Us About Your Event *</label>
+                    <textarea id="client-message" rows="5" class="w-full px-4 py-4 rounded-xl border border-neutral-200 bg-neutral-50/50 text-sm focus:outline-none focus:border-[#9d4e7c] focus:bg-white transition-all resize-none" placeholder="Share a few details about your vision, estimated guest count, or venue ideas..." required></textarea>
+                    <span class="text-[11px] text-red-500 mt-1 hidden" id="err-msg">Please write a short message about your plans.</span>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-[#9d4e7c] text-white font-bold text-xs uppercase tracking-wider py-4 rounded-xl shadow-md hover:bg-[#823d65] transition-colors">Send Message</button>
+                </div>
+                
+                <div id="form-success" class="hidden p-4 bg-green-50 border border-green-200 text-green-800 text-xs font-medium rounded-xl flex items-center space-x-2">
+                    <i class="fa-solid fa-circle-check text-base"></i>
+                    <span>Thank you! Your message has been sent. Our team will get back to you within 12 hours.</span>
+                </div>
+            </form>
+        </div>
+
+        <div class="lg:col-span-5 space-y-6 reveal-element" style="transition-delay: 200ms;">
+            
+            <div class="bg-white p-6 rounded-3xl border border-pink-100/60 shadow-sm space-y-4">
+                <h4 class="font-serif-title text-xl font-bold text-neutral-900">Delhi Operational Hub</h4>
+                
+                <div class="flex items-start space-x-3 text-sm text-neutral-600 pt-2">
+                    <div class="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center text-[#9d4e7c] shrink-0">
+                        <i class="fa-solid fa-location-dot text-xs"></i>
+                    </div>
+                    <p class="leading-relaxed mt-1">Okhla Industrial Area, Phase III,<br>New Delhi, Delhi - 110020</p>
+                </div>
+
+                <div class="flex items-center space-x-3 text-sm text-neutral-600">
+                    <div class="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center text-[#e8a0bf] shrink-0">
+                        <i class="fa-solid fa-envelope text-xs"></i>
+                    </div>
+                    <p>architecture@roseknotevents.com</p>
+                </div>
+
+                <div class="flex items-center space-x-3 text-sm text-neutral-600">
+                    <div class="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center text-[#9d4e7c] shrink-0">
+                        <i class="fa-solid fa-phone text-xs"></i>
+                    </div>
+                    <p>+91 11 4984 2200 / +91 99110 88221</p>
+                </div>
+            </div>
+
+            <div class="relative rounded-3xl p-[1px] bg-gradient-to-br from-[#9d4e7c]/30 via-neutral-800 to-neutral-950 shadow-xl overflow-hidden group">
+                <div class="bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-950 p-7 rounded-[23px] space-y-6 relative z-10">
+                    
+                    <div class="absolute -right-16 -top-16 w-36 h-36 bg-[#9d4e7c]/15 rounded-full blur-2xl pointer-events-none transition-all duration-700 group-hover:bg-[#9d4e7c]/25"></div>
+                    <div class="absolute -left-16 -bottom-16 w-36 h-36 bg-[#e8a0bf]/10 rounded-full blur-2xl pointer-events-none"></div>
+                    
+                    <div class="flex items-center justify-between border-b border-neutral-800/80 pb-4">
+                        <h4 class="font-serif-title text-xl font-semibold tracking-wide text-pink-50">Planning Directives</h4>
+                        <div class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.5)]"></div>
+                    </div>
+                    
+                    <div class="space-y-5">
+                        
+                        <div class="flex items-start space-x-4 group/item">
+                            <div class="w-7 h-7 rounded-lg bg-neutral-800 border border-neutral-700/60 flex items-center justify-center text-[10px] font-bold text-[#e8a0bf] tracking-wider shrink-0 shadow-inner group-hover/item:border-[#9d4e7c]/50 transition-colors">
+                                01
+                            </div>
+                            <div class="space-y-1 pt-0.5">
+                                <span class="text-[10px] uppercase font-bold text-neutral-400 tracking-widest block transition-colors group-hover/item:text-[#e8a0bf]">Deployment Range</span>
+                                <p class="text-xs text-neutral-300 font-light leading-relaxed">
+                                    Full turnkey structural setups engineered across Delhi NCR, Gurugram, Noida, and regional luxury resort zones.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 group/item">
+                            <div class="w-7 h-7 rounded-lg bg-neutral-800 border border-neutral-700/60 flex items-center justify-center text-[10px] font-bold text-[#e8a0bf] tracking-wider shrink-0 shadow-inner group-hover/item:border-[#9d4e7c]/50 transition-colors">
+                                02
+                            </div>
+                            <div class="space-y-1 pt-0.5">
+                                <span class="text-[10px] uppercase font-bold text-neutral-400 tracking-widest block transition-colors group-hover/item:text-[#e8a0bf]">Response Window</span>
+                                <p class="text-xs text-neutral-300 font-light leading-relaxed">
+                                    Initial structural review briefs and basic site line allocations are delivered to your inbox within 12 business hours.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 group/item">
+                            <div class="w-7 h-7 rounded-lg bg-neutral-800 border border-neutral-700/60 flex items-center justify-center text-[10px] font-bold text-[#e8a0bf] tracking-wider shrink-0 shadow-inner group-hover/item:border-[#9d4e7c]/50 transition-colors">
+                                03
+                            </div>
+                            <div class="space-y-1 pt-0.5">
+                                <span class="text-[10px] uppercase font-bold text-neutral-400 tracking-widest block transition-colors group-hover/item:text-[#e8a0bf]">Safety Frameworks</span>
+                                <p class="text-xs text-neutral-300 font-light leading-relaxed">
+                                    All physical staging arrays and overlay builds undergo strict weight balancing and anchoring protocols prior to opening.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- ==========================================
+             9. FOOTER
+             ========================================== -->
+        <footer class="bg-neutral-900 text-white border-t border-neutral-800 pt-16 pb-8">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-neutral-800">
+                
+                <div class="lg:col-span-4 space-y-5">
+                    <a href="#home" class="block">
+                        <img src="https://roseknotevents.com/wp-content/uploads/2022/12/Black-Roseknot-Events-Marketing.png.webp" 
+                             alt="Roseknot Events & Marketing Footer Logo" 
+                             class="h-10 w-auto object-contain logo-white-filter">
+                    </a>
+                    <p class="text-gray-400 text-xs md:text-sm font-light leading-relaxed">
+                        A premier event management and strategic marketing agency in New Delhi that blends high-impact corporate production with breathtaking luxury celebrations, handling everything from concept fabrication to flawless logistical execution.
+                    </p>
+                    <div class="flex space-x-3 pt-2">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-gray-400 hover:bg-[#9d4e7c] hover:text-white transition-all" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-gray-400 hover:bg-[#e8a0bf] hover:text-neutral-900 transition-all" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-gray-400 hover:bg-[#9d4e7c] hover:text-white transition-all" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition-all" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 space-y-4">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-[#e8a0bf]">Agency Maps</h4>
+                    <ul class="space-y-2 text-xs md:text-sm text-gray-400 font-light">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home Base Control</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">Corporate Strategy Profile</a></li>
+                        <li><a href="#storyline" class="hover:text-white transition-colors">Methodology Steps</a></li>
+                        <li><a href="#metrics" class="hover:text-white transition-colors">Performance Numbers</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors">Client Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3 space-y-4">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-[#9d4e7c]">Execution Sectors</h4>
+                    <ul class="space-y-2 text-xs text-gray-400 font-light">
+                        <li><span class="text-gray-200 font-medium">New Delhi:</span> Aerocity, Okhla, Lutyens Blocks</li>
+                        <li><span class="text-gray-200 font-medium">Gurugram Central:</span> CyberHub Corporate Tracks</li>
+                        <li><span class="text-gray-200 font-medium">Destination Hubs:</span> Jaipur, Udaipur Luxury Overlays</li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 space-y-4">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-[#e8a0bf]">Operational Hours</h4>
+                    <p class="text-xs text-gray-400 leading-relaxed font-light">
+                        Intake Pipelines active Monday through Saturday: 09:30 AM to 07:00 PM IST. Emergency site fabrication monitoring operates 24/7.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 md:px-12 pt-8 flex flex-col md:flex-row justify-between items-center text-[11px] text-gray-500 font-light space-y-4 md:space-y-0">
+                <p>&copy; 2026 Roseknot Events & Marketing. All structural rights reserved across territories.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white">Privacy Framework Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Material Service</a>
+                </div>
+            </div>
+        </footer>
+ 
+    <script src="script.js"></script>
+
+    </body>
+    </html>
